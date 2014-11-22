@@ -1,0 +1,6 @@
+GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
+HEADER_SEARCH_PATHS = "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/CMDQueryStringSerialization" "${PODS_ROOT}/Headers/Public/ISO8601" "${PODS_ROOT}/Headers/Public/ReactiveCocoa" "${PODS_ROOT}/Headers/Public/ReactiveCocoa/ReactiveCocoa" "${PODS_ROOT}/Headers/Public/SAMCache" "${PODS_ROOT}/Headers/Public/SimpleAuth"
+OTHER_CFLAGS = $(inherited) -isystem "${PODS_ROOT}/Headers/Public" -isystem "${PODS_ROOT}/Headers/Public/CMDQueryStringSerialization" -isystem "${PODS_ROOT}/Headers/Public/ISO8601" -isystem "${PODS_ROOT}/Headers/Public/ReactiveCocoa" -isystem "${PODS_ROOT}/Headers/Public/ReactiveCocoa/ReactiveCocoa" -isystem "${PODS_ROOT}/Headers/Public/SAMCache" -isystem "${PODS_ROOT}/Headers/Public/SimpleAuth"
+OTHER_LDFLAGS = -ObjC -all_load -l"ObjC" -l"Pods-CMDQueryStringSerialization" -l"Pods-ISO8601" -l"Pods-ReactiveCocoa" -l"Pods-SAMCache" -l"Pods-SimpleAuth" -framework "Foundation" -framework "UIKit"
+OTHER_LIBTOOLFLAGS = $(OTHER_LDFLAGS)
+PODS_ROOT = ${SRCROOT}/Pods
